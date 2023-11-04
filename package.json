@@ -2,6 +2,14 @@
   "name": "t-shirts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DmytroVasylenko6.github.io/t-shirts/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytroVasylenko6/t-shirts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmytroVasylenko6/t-shirts/issues"
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@reduxjs/toolkit": "^1.5.1",
