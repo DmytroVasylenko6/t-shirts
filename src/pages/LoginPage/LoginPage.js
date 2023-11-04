@@ -1,5 +1,4 @@
 import { React } from 'react';
-import Section from '../../components/common/Section/Section';
 import LoginForm from '../../components/LoginForm';
 import Background from '../../images/wallpaperflare.com_wallpaper.jpg';
 import s from './LoginPage.module.scss';

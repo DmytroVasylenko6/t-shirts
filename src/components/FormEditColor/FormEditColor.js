@@ -64,7 +64,7 @@ export default function FormEditColor({ name, number, id }) {
   };
 
   return (
-    <>
+    <div className={s.container}>
       <div>
         <Input
           label="Color name"
@@ -118,6 +118,6 @@ export default function FormEditColor({ name, number, id }) {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }

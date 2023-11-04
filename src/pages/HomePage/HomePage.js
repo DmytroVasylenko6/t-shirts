@@ -22,7 +22,6 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     backgroundColor: 'white',
     padding: '20px',
-    border: '1px solid #ccc',
     boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
     border: 'none',
     borderRadius: '15px',
@@ -93,7 +92,7 @@ const HomePage = () => {
         <h1 className={s.title}>Your Helper</h1>
         <div className={s.logo}>
           <div className={s.rotating} tabIndex="0">
-            <object data={Logo} width="20" height="20"></object>
+            <img src={Logo} width="20" height="20" alt="logo" />
           </div>
           <h2 className={s.subtitle}>
             HFT<span className={s.subtitleItemFirst}>7</span>
