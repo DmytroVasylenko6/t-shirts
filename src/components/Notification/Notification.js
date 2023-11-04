@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './Notification.module.css';
+import s from './Notification.module.scss';
 import classNames from 'classnames';
 
 export default function Notification({ text, color }) {

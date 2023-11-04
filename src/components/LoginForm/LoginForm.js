@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import Input from '../common/Input/Input';
 import Button from '../common/Button/Button';
-import s from './LoginForm.module.css';
+import s from './LoginForm.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 import fadeNotification from '../../fadeNotification.module.css';

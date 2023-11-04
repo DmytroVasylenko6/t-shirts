@@ -4,6 +4,13 @@
   margin-bottom: 100px;
 }
 
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .titlePhonebook {
   font-family: 'Dancing Script', cursive;
   margin: 15px 0;

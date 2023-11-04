@@ -3,20 +3,7 @@ import { useDispatch } from 'react-redux';
 import { authOperations } from '../../redux/auth';
 import defaultAvatar from './default-avatar.png';
 import Button from '../common/Button/Button';
-
-const styles = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  avatar: {
-    marginRight: 4,
-  },
-  name: {
-    fontWeight: 700,
-    marginRight: 12,
-  },
-};
+import s from './UserMenu.module.scss';
 
 export default function UserMenu() {
   const dispatch = useDispatch();
@@ -26,9 +13,9 @@ export default function UserMenu() {
   ]);
 
   return (
-    <div style={styles.container}>
-      <img src={defaultAvatar} alt="" width="32" style={styles.avatar} />
-      <span style={styles.name}>Welcome, admin </span>
+    <div className={s.container}>
+      <img src={defaultAvatar} alt="" width="32" className={s.avatar} />
+      <span className={s.name}>Welcome, admin </span>
       <Button text={'logout'} listener={() => onLogout()} color="red" />
     </div>
   );

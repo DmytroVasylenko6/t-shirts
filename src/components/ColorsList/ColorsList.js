@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { getVisibleColors } from '../../redux/colors/colors-selectors';
 import PropTypes from 'prop-types';
-import s from './ColorsList.module.css';
-import './fade.css';
+import s from './ColorsList.module.scss';
+import './fade.scss';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import FormEditColor from '../FormEditColor';
 

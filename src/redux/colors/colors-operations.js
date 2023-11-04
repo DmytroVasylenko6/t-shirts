@@ -53,7 +53,7 @@ export const colorUpdate = ({ id, name, number }) => dispatch => {
   axios
     .put(`/colors/${id}`, color)
     .then(() => dispatch(updateColorSuccess({ id, name, number })))
-    .catch(error => dispatch(addColorError(error)));
+    .catch(error => dispatch(updateColorError(error)));
 };
 
 export const colorDelete = id => dispatch => {

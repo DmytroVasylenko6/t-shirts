@@ -6,9 +6,11 @@ const getErrorMessage = state => state.auth.error;
 
 const getErrorStatus = state => state.auth.errorStatus;
 
-export default {
+const selectors = {
   getIsAuthenticated,
   getUserName,
   getErrorMessage,
   getErrorStatus,
 };
+
+export default selectors;

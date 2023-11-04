@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './Button.module.css';
+import s from './Button.module.scss';
 import classNames from 'classnames';
 
 export default function Button({ text, listener, type, color }) {

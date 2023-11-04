@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './PageContainer.module.css';
+import s from './PageContainer.module.scss';
 
 function PageContainer({ children }) {
   return <div className={s.pageContainer}>{children}</div>;

@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import shortid from 'shortid';
 import Input from '../common/Input/Input';
 import Button from '../common/Button/Button';
-import s from './Form.module.css';
+import s from './FormAddColor.module.scss';
 import { CSSTransition } from 'react-transition-group';
 import fadeNotification from '../../fadeNotification.module.css';
 import Notification from '../Notification';

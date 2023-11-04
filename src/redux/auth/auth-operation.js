@@ -51,4 +51,11 @@ const getToken = () => async (dispatch, getState) => {
   token.set(persistedToken);
 };
 
-export default { token, logIn, logOut, getToken };
+const operations = {
+  token,
+  logIn,
+  logOut,
+  getToken,
+};
+
+export default operations;

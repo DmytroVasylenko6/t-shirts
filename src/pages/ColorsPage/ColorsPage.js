@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../../components/common/Section/Section';
 import ColorsList from '../../components/ColorsList/ColorsList';
-import Form from '../../components/Form/Form';
+import FormAddColor from '../../components/FormAddColor/FormAddColor';
 import shortid from 'shortid';
 import Input from '../../components/common/Input/Input';
 import Container from '../../components/common/Container/Container';
@@ -11,6 +11,7 @@ import * as colorsAction from '../../redux/colors/colors-actions';
 import { colorsParse } from '../../redux/colors/colors-operations';
 import { getFilter, getColors } from '../../redux/colors/colors-selectors';
 import { useDispatch, useSelector } from 'react-redux';
+import Logo from '../../images/hft.svg';
 
 export default function AdminPage() {
   const colors = useSelector(getColors);
@@ -31,8 +32,13 @@ export default function AdminPage() {
 
   return (
     <>
-      <Section title="PhoneBook" appear={true} styles="phonebook">
-        <Form />
+      <Section
+        title="Add new color"
+        image={Logo}
+        appear={true}
+        styles="phonebook"
+      >
+        <FormAddColor />
       </Section>
 
       <Section title="Colors">

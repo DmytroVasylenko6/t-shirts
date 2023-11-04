@@ -22,25 +22,23 @@ export const paths = {
 
 const Router = () => {
   return (
-    <PageContainer>
-      <Suspense fallback={<p align="center">Loading...</p>}>
-        <Switch>
-          <Route exact path={paths.MAIN}>
-            <HomePage />
-          </Route>
+    <Suspense fallback={<p align="center">Loading...</p>}>
+      <Switch>
+        <Route exact path={paths.MAIN}>
+          <HomePage />
+        </Route>
 
-          <PrivateRoute path={paths.COLORS} redirectTo={paths.LOGIN}>
-            <ColorsPage />
-          </PrivateRoute>
+        <PrivateRoute path={paths.COLORS} redirectTo={paths.LOGIN}>
+          <ColorsPage />
+        </PrivateRoute>
 
-          <PublicRoute path={paths.LOGIN} restricted redirectTo={paths.COLORS}>
-            <LoginPage />
-          </PublicRoute>
+        <PublicRoute path={paths.LOGIN} restricted redirectTo={paths.COLORS}>
+          <LoginPage />
+        </PublicRoute>
 
-          <Redirect to="/" />
-        </Switch>
-      </Suspense>
-    </PageContainer>
+        <Redirect to="/" />
+      </Switch>
+    </Suspense>
   );
 };
 

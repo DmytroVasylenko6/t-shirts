@@ -10,8 +10,9 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import contactsReducer from './colors/colors-reducer';
-import { authReducer } from './auth';
+import authReducer from './auth/auth-reducer';
+import colorsReducer from './colors/colors-reducer';
+import sizesReducer from './sizes/sizes-reducer';
 const middleware = [
   ...getDefaultMiddleware({
     serializableCheck: {
@@ -28,8 +29,9 @@ const authPersistConfig = {
 
 const store = configureStore({
   reducer: {
-    colors: contactsReducer,
     auth: persistReducer(authPersistConfig, authReducer),
+    colors: colorsReducer,
+    sizes: sizesReducer,
   },
   middleware,
   devTools: process.env.NODE_ENV === 'development',
@@ -37,4 +39,6 @@ const store = configureStore({
 
 const persistor = persistStore(store);
 
-export default { store, persistor };
+const dataStore = { store, persistor };
+
+export default dataStore;

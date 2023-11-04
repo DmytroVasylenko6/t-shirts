@@ -10,7 +10,7 @@ const logoutError = createAction('auth/logoutError');
 
 const errorStatus = createAction('auth/errorStatus');
 
-export default {
+const actions = {
   loginRequest,
   loginSuccess,
   loginError,
@@ -19,3 +19,4 @@ export default {
   logoutError,
   errorStatus,
 };
+export default actions;

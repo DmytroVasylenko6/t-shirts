@@ -3,6 +3,7 @@ import Input from '../common/Input/Input';
 import Button from '../common/Button/Button';
 import { colorDelete, colorUpdate } from '../../redux/colors/colors-operations';
 import { useDispatch } from 'react-redux';
+import s from './FormEditColor.module.scss';
 
 export default function FormEditColor({ name, number, id }) {
   const [colorName, setColorName] = useState(name);

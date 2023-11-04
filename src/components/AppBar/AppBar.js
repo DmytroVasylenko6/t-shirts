@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import Navigation from '../Navigation';
 import AuthNav from '../AuthNav';
 import UserMenu from '../UserMenu';
-import s from './AppBar.module.css';
+import s from './AppBar.module.scss';
 import { authSelectors } from '../../redux/auth';
 
 export default function AppBar() {
